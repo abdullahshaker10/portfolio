@@ -1,0 +1,33 @@
+{% extends "basicapp/base.html" %}
+{% block content %}
+
+  <div class="jumbotron">
+    <h2>Patient info</h2>
+
+<ul>
+
+
+  <table class="table mb-0">
+    <thead>
+      <tr>
+        <th>name</th>
+        <th>DICOM FILE</th>
+
+      </tr>
+    </thead>
+    <tbody>
+   {% for patient in patients %}
+   <tr>
+         <td>{{patient.name}} </td>
+         <td>
+           <a href="{{patient.DICOM_FILE.url}}" class="btn btn-primary btn-sm">Show File</a>
+
+          </td>
+
+   </tr>
+   {% endfor%}
+
+  </tbody>
+  </table>
+  </div>
+{% endblock %}
