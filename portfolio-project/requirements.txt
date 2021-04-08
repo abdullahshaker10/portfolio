@@ -11,7 +11,7 @@ Click==7.0
 colorama==0.3.9
 cycler==0.10.0
 dicom==0.9.9.post1
-Django==2.2.9
+Django==2.2.20
 django-crispy-forms==1.8.1
 django-debug-toolbar==2.2
 django-dicom==0.0.4
